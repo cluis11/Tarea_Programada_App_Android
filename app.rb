@@ -35,6 +35,11 @@ get '/get_pregunta/:preg' do
 	preg
 end
 
+get '/ultimas' do
+	ultimas=$P.ultimas_preguntas()
+	ultimas
+end
+
 get '/respuestas' do
 	res=$R.respuestas_(true)
 	res
