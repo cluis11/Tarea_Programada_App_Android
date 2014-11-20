@@ -42,7 +42,7 @@ class Respuestas
 		File.open('respuestas.txt','r') do |f|
 			while line = f.gets
 				if tempL[cont][0]==id
-					respuestas+=self.formato(line)
+					respuestas+=self.formato(line)+" "
 				end
 				cont+=1
 			end
