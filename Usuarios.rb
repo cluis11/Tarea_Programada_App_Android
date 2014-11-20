@@ -39,3 +39,17 @@ class Usuarios
 		user
 	end
 end
+		temp=""	
+		user.each_char {|u|
+			if u=="_"
+				temp=temp+","
+			else
+				temp=temp+u
+			end
+		}
+		File.open('usuarios.txt', 'a') do |f|
+  			f.puts temp
+		end
+		user
+	end
+end
